@@ -1,0 +1,31 @@
+name: lake_material_design
+description: "Material Design 3."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # roboto font 사용 => https://pub.dev/packages/google_fonts
+  # 해당 라이브러리를 포함시켜 빌드시 앱이 구동이 되지 않는다. 
+  # google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: fonts/Roboto-Italic.ttf
+          style: italic
+  uses-material-design: true
