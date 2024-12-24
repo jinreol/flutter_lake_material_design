@@ -9,6 +9,7 @@ class AppRouter extends RootStackRouter {
         // routes go here
         AutoRoute(page: HomeRoute.page, initial: true),
         AutoRoute(path: '/dummy', page: DummyRoute.page),
+        AutoRoute(path: '/styles/avatar', page: AvatarRoute.page),
       ];
 
   @override

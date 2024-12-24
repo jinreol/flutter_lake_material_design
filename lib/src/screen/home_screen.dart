@@ -1,6 +1,5 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:lake_material_design/src/router/app_router.gr.dart';
 
 @RoutePage()
 class HomeScreen extends StatelessWidget {
@@ -10,7 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('M3 Tables of contents [01]'),
+          title: const Text(
+            'M3 Tables of contents',
+          ),
           centerTitle: true,
         ),
         body: SingleChildScrollView(
@@ -75,7 +76,7 @@ class HomeScreen extends StatelessWidget {
                             InkWell(
                               onTap: () {
                                 debugPrint("Avaters click");
-                                context.router.pushNamed('/dummy');
+                                context.router.pushNamed('/styles/avatar');
                               },
                               child: const ComponentItem(title: 'Avatars'),
                             ),

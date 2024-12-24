@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lake_material_design/src/router/app_router.dart';
-import 'package:lake_material_design/src/screen/home_screen.dart';
 
 void main() {
   runApp(MainApp());
